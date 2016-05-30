@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import pencil as pc 
 import os
 import numpy as N
@@ -64,4 +63,3 @@ fl.close()
 
 =======
 dfadfthis is a wrong file
->>>>>>> 7bb05cf4cb1cb4b32de66d6b22ba6c16fb2e9384
