@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import pencil as pc 
 import os
 import numpy as N
@@ -61,3 +62,6 @@ fl.close()
 #os.system('preplot res/bin.dat res/avg.plt' )
 #os.remove('res/bin.dat')                   
 
+=======
+dfadfthis is a wrong file
+>>>>>>> 7bb05cf4cb1cb4b32de66d6b22ba6c16fb2e9384
