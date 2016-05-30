@@ -1,21 +1,4 @@
-import pencil as pc 
-import os
-import numpy as N
-from math import *
-varfrom=raw_input('from :')
-varto=raw_input('to :')
-dim=pc.read_dim()
-grid=pc.read_grid(quiet=True)
-uu1=pc.read_slices(field='uu1',extension='xy')
-uu2=pc.read_slices(field='uu2',extension='xy')
-uu3=pc.read_slices(field='uu3',extension='xy')
-fl=open('avg5-9.dat','w')
-fl.write('VARIABLES="x","y","Ux","Uy","Uz","U2","V2","W2","UV","UW","VW"\n')
-print >>fl, 'ZONE I=%d,J=%d,F=POINT\n'  %(dim.ny,dim.nx)
-nslice=0
-avgu=N.zeros([3,dim.my,dim.mx],dtype=N.double)
-avgu2=N.zeros([6,dim.my,dim.mx],dtype=N.double)
-for ts,sliceu,slicev,slicew in zip(uu1[1],uu1[0],uu2[0],uu3[0]):
+
 ##for ts,sliceu,slicev in zip(uu1[1],uu1[0],uu2[0]):
     if ts>float(varfrom) and ts<float(varto):
         nslice=nslice+1
